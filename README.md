@@ -38,6 +38,25 @@ Causal Explanations with Evidence
 This project builds a system to analyze multi-turn conversational transcripts
 and generate causally grounded explanations for outcome events such as
 escalation, complaint, or refund.
+
+
+## Setup and Installation
+
+### Environment Setup (Recommended)
+
+We recommend using a virtual environment to avoid dependency conflicts.
+
+Using Conda:
+
+```bash
+conda create -n pravaah python=3.10
+conda activate pravaah
+
+### Install Dependencies
+pip install -r requirements.txt
+python -m textblob.download_corpora
+
+
 ## Project Structure
 pravaah_hackathon/
 │
