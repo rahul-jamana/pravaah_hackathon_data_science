@@ -1,0 +1,36 @@
+[
+  {
+    "query": "Why did this conversation escalate?",
+    "response": {
+      "conversation_id": "6794-8660-4606-3216",
+      "causal_factors": [
+        "Overall negative conversational tone over multiple turns",
+        "Extended interaction length indicating possible issue resolution difficulty"
+      ],
+      "evidence": [
+        {
+          "turn_id": 1,
+          "speaker": "Customer",
+          "text": "hello im calling about an order that shows delivered but i never received it"
+        }
+      ]
+    }
+  },
+  {
+    "query": "Which dialogue turns support this explanation?",
+    "response": {
+      "conversation_id": "6794-8660-4606-3216",
+      "causal_factors": [
+        "Overall negative conversational tone over multiple turns",
+        "Extended interaction length indicating possible issue resolution difficulty"
+      ],
+      "evidence": [
+        {
+          "turn_id": 1,
+          "speaker": "Customer",
+          "text": "hello im calling about an order that shows delivered but i never received it"
+        }
+      ]
+    }
+  }
+]

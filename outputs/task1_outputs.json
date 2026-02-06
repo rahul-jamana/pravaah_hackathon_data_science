@@ -1,0 +1,26 @@
+[
+  {
+    "conversation_id": "6794-8660-4606-3216",
+    "causal_factors": [
+      "Overall negative conversational tone over multiple turns",
+      "Extended interaction length indicating possible issue resolution difficulty"
+    ],
+    "evidence": [
+      {
+        "turn_id": 1,
+        "speaker": "Customer",
+        "text": "hello im calling about an order that shows delivered but i never received it"
+      },
+      {
+        "turn_id": 3,
+        "speaker": "Customer",
+        "text": "its 9595912 the tracking was marked delivered yesterday afternoon but there was nothing at my door"
+      },
+      {
+        "turn_id": 5,
+        "speaker": "Customer",
+        "text": "ive checked with my neighbors and looked at my security camera footage nothing shows a delivery ive been home all day too"
+      }
+    ]
+  }
+]
