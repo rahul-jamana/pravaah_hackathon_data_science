@@ -314,5 +314,18 @@ Overall, the system generates **coherent, interpretable, and reproducible**
 causal explanations aligned with human intuition.
 
 
-## System Architecture
+## Note on Model Usage
+
+Although the problem statement allows for trained models, this system
+intentionally adopts a rule-based causal reasoning approach rather than
+training a machine learning or LLM model.
+
+This design choice ensures:
+- Faithful, non-hallucinatory explanations
+- Full interpretability of causal factors
+- Exact traceability to dialogue-level evidence
+
+All causal logic is deterministic and derived directly from conversational
+features rather than learned statistical correlations.
+
 
