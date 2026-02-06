@@ -1,4 +1,39 @@
 # Pravaah Hackathon – Causal Analysis over Conversational Data
+## System Architecture
+Raw Conversation JSON
+│
+▼
+┌───────────────────┐
+│ Preprocessing │ (preprocess.py)
+│ - Parse JSON │
+│ - Clean text │
+│ - Turn extraction │
+└───────────────────┘
+│
+▼
+┌──────────────────────────┐
+│ Feature Engineering │ (feature_engineering.py)
+│ - Sentiment │
+│ - Speaker patterns │
+│ - Escalation signals │
+└──────────────────────────┘
+│
+▼
+┌──────────────────────────┐
+│ Causal Analysis (Task 1) │ (causal_analysis.py)
+│ - Rule-based reasoning │
+│ - Evidence identification│
+└──────────────────────────┘
+│
+▼
+┌─────────────────────────────┐
+│ Context-Aware Query Engine │ (Task 2)
+│ - Context Manager │
+│ - Multi-turn queries │
+└─────────────────────────────┘
+│
+▼
+Causal Explanations with Evidence
 
 This project builds a system to analyze multi-turn conversational transcripts
 and generate causally grounded explanations for outcome events such as
@@ -236,3 +271,29 @@ The implementation is deterministic, interpretable, and evidence-based.
     }
   ]
 }
+
+## Evaluation (Qualitative)
+
+Since the objective of this system is **causal explanation** rather than
+prediction, we perform a qualitative evaluation instead of numerical metrics.
+
+### Evaluation Criteria
+The explanations are evaluated based on:
+- **Faithfulness**: Are causal factors grounded in the actual conversation?
+- **Evidence Traceability**: Can each explanation be traced to specific dialogue turns?
+- **Consistency**: Does the system produce stable explanations for the same input?
+
+### Observations
+- Conversations with repeated customer frustration consistently yield
+  explanations involving negative sentiment and extended interaction length.
+- Explicit escalation language (e.g., “refund”, “complaint”) is correctly
+  identified and reflected in causal factors.
+- Neutral or resolved conversations produce weak or fallback explanations,
+  which is expected behavior.
+
+Overall, the system generates **coherent, interpretable, and reproducible**
+causal explanations aligned with human intuition.
+
+
+## System Architecture
+
